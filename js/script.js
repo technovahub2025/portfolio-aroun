@@ -134,3 +134,26 @@ window.addEventListener('scroll', () => {
     if (window.scrollY > 50) navbar.classList.add('scrolled');
     else navbar.classList.remove('scrolled');
 });
+
+// 7. CONTACT FORM HANDLER
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById('contactName').value;
+        const email = document.getElementById('contactEmail').value;
+        const subject = document.getElementById('contactSubject').value;
+        const message = document.getElementById('contactMessage').value;
+
+        // Construct Mailto Link
+        const mailtoLink = `mailto:arunkumarappadoure@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message)}`;
+
+        // Open Mail Client
+        window.location.href = mailtoLink;
+
+        // Optional: Reset form or show success message
+        alert("Transmission initiated. Opening your email client...");
+        contactForm.reset();
+    });
+}
