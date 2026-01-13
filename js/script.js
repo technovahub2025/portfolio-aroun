@@ -33,7 +33,7 @@ window.addEventListener('mousemove', (e) => {
 
 // 4. TYPEWRITER EFFECT
 const textElement = document.querySelector('.typewriter span');
-const titles = ["Serial Entrepreneur", "I'm JCI PRESIDENT 2025","Launch Director of BNI","Business Network startegist", "JCI PRESIDENT", "SAFETY EXPERT"];
+const titles = ["Serial Entrepreneur","Launch Director of BNI","Business Network startegist", "INDUSTRIAL SAFETY EXPERT"];
 let titleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
