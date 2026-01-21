@@ -43,7 +43,7 @@
                     <li class="nav-item"><a class="nav-link" href="#company">Company</a></li>
                     <li class="nav-item"><a class="nav-link" href="#journey">Timeline</a></li>
                     <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
-                     <li class="nav-item"><a class="nav-link" href="#awards">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#awards">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -75,9 +75,14 @@
                 </div>
                 <div class="col-lg-5 text-center position-relative" data-aos="zoom-in" data-aos-duration="1500">
                     <div class="tech-circle"></div>
-                    <img src="images/arunkumar-profile.jpg" alt="Arunkumar Appadoure" class="hero-img">
+                    <img src="images/arunkumar-profile.jpg" alt="Arunkumar Appadoure" class="hero-img"
+                        id="heroPopupImg">
                 </div>
             </div>
+        </div>
+        <div class="img-popup" id="imgPopup">
+            <span class="close-popup" id="closePopup">&times;</span>
+            <img src="images/arunkumar-profile.jpg" alt="Arunkumar Appadoure">
         </div>
     </section>
 
@@ -683,7 +688,7 @@
                     <h2 class="text-white font-head mb-4">Premium <span style="color: var(--purple);">Hospitality</span>
                     </h2>
                     <p class="text-gray mb-4">
-                        Aroun Elite Homestays offers a peaceful, home-away-from-home experience in the heart of
+                        Aroun Elite Homestays offers a peaceful, home away from home experience in the heart of
                         Pondicherry.
                         Strategically located near key spiritual and cultural landmarks, we provide comfort and
                         convenience for every traveler.
@@ -729,8 +734,10 @@
                         <div class="t-year">2025</div>
                         <div class="t-role">President</div>
                         <div class="t-org">JCI Pondicherry (Tenure 2025-26)</div>
-                        <p class="text-muted">Leading the chapter with vision and excellence.</p>
+                        <!-- <p class="text-muted">Leading the chapter with vision and excellence.</p> -->
                         <ul class="list-unstyled text-start text-muted small mt-3">
+                            <li><i class="fas fa-caret-right text-primary me-2"></i> Leading the chapter with vision and
+                                excellence.</li>
                             <li><i class="fas fa-caret-right text-primary me-2"></i> Successfully organized National
                                 Event "Author 2025" managing 30+ National Trainers</li>
                             <li><i class="fas fa-caret-right text-primary me-2"></i> Won JFM Honour from JCI India for
@@ -763,8 +770,10 @@
                         <div class="t-year">2024</div>
                         <div class="t-role">President (2nd Term)</div>
                         <div class="t-org">BNI Efficax</div>
-                        <p class="text-muted">Achieved multiple milestones during tenure.</p>
+                        <!-- <p class="text-muted">Achieved multiple milestones during tenure.</p> -->
                         <ul class="list-unstyled text-start text-muted small mt-3">
+                            <li><i class="fas fa-caret-right text-primary me-2"></i> Achieved multiple milestones during
+                                tenure</li>
                             <li><i class="fas fa-caret-right text-primary me-2"></i> Achieved Hall of Fame status with
                                 36+ members</li>
                             <li><i class="fas fa-caret-right text-primary me-2"></i> Won Rs 60,000 Cash Award</li>
@@ -843,8 +852,14 @@
                         <div class="t-year">2021</div>
                         <div class="t-role">Initiation</div>
                         <div class="t-org">JCI Pondicherry</div>
-                        <p class="text-muted">Joined JCI Pondicherry, marking the start of a significant leadership
-                            journey in the organization.</p>
+                        <!-- <p class="text-muted">Joined JCI Pondicherry, marking the start of a significant leadership
+                            journey in the organization.</p> -->
+                        <ul class="list-unstyled text-start text-muted small mt-3">
+                            <li><i class="fas fa-caret-right text-primary me-2"></i> Joined JCI Pondicherry, marking the
+                                start of a significant leadership
+                                journey in the organization.
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
@@ -854,12 +869,14 @@
                         <div class="t-role" style="color: var(--cyan);">Professional Memberships</div>
                         <div class="t-org">Industry Associations</div>
                         <ul class="list-unstyled text-start text-muted small mt-3">
-                            <li><i class="fas fa-check-circle text-info me-2"></i> Executive Member: Information
+                            <li><i class="fas fa-caret-right text-primary me-2"></i> Executive Member: Information
                                 Technology Trader Association (ITTA)</li>
-                            <li><i class="fas fa-check-circle text-info me-2"></i> Corporate Member: Fire Association of
+                            <li><i class="fas fa-caret-right text-primary me-2"></i> Corporate Member: Fire Association
+                                of
                                 India (FSAI)</li>
-                            <li><i class="fas fa-check-circle text-info me-2"></i> Active Member: CITA</li>
-                            <li><i class="fas fa-check-circle text-info me-2"></i> Member: Pondicherry Consumer Product
+                            <li><i class="fas fa-caret-right text-primary me-2"></i> Active Member: CITA</li>
+                            <li><i class="fas fa-caret-right text-primary me-2"></i> Member: Pondicherry Consumer
+                                Product
                                 Distributors Association (PCPDA)</li>
                         </ul>
                     </div>
@@ -956,50 +973,53 @@
             </div>
         </div>
     </section>
+
     <section id="gallery" class="py-5">
-    <div class="container">
-        <h2 class="section-title text-center w-100 mb-5">
-            Multiple Hall<span class="text-primary">of</span> Fame
-        </h2>
+  <div class="container">
+    <h2 class="section-title text-center w-100 mb-5">
+      Multiple Hall<span class="text-primary"> of</span> Fame
+    </h2>
 
-        <div class="row g-4 justify-content-center">
+    <div class="row g-4 justify-content-center">
 
-            <!-- Image 1 -->
-            <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in">
-                <div class="glass-card text-center p-3 h-100 d-flex justify-content-center align-items-center">
-                    <img src="images/image1.jpeg" alt="Membership 1" class="img-fluid rounded">
-                </div>
-            </div>
-
-            <!-- Image 2 -->
-            <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
-                <div class="glass-card text-center p-3 h-100 d-flex justify-content-center align-items-center">
-                    <img src="images/image2.jpeg" alt="Membership 2" class="img-fluid rounded">
-                </div>
-            </div>
-
-            <!-- Image 3 -->
-            <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
-                <div class="glass-card text-center p-3 h-100 d-flex justify-content-center align-items-center">
-                    <img src="images/image3.jpeg" alt="Membership 3" class="img-fluid rounded">
-                </div>
-            </div>
-
-            <!-- Image 4 -->
-            <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300">
-                <div class="glass-card text-center p-3 h-100 d-flex justify-content-center align-items-center">
-                    <img src="images/image4.jpeg" alt="Membership 4" class="img-fluid rounded">
-                </div>
-            </div>
-
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="glass-card p-3 text-center">
+          <img src="images/image1.jpeg" class="img-fluid rounded popup-img" alt="Membership 1">
         </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="glass-card p-3 text-center">
+          <img src="images/image2.jpeg" class="img-fluid rounded popup-img" alt="Membership 2">
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="glass-card p-3 text-center">
+          <img src="images/image3.jpeg" class="img-fluid rounded popup-img" alt="Membership 3">
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="glass-card p-3 text-center">
+          <img src="images/image4.jpeg" class="img-fluid rounded popup-img" alt="Membership 4">
+        </div>
+      </div>
+
     </div>
+  </div>
+
+  <!-- Gallery-only popup -->
+  <div class="img-popup" id="galleryPopup">
+    <span class="close-popup" id="galleryClose">&times;</span>
+    <img id="galleryPopupImg" src="" alt="">
+  </div>
 </section>
 
 
     <section id="memberships" class="py-5">
         <div class="container">
-            
+
             <div class="row g-4 justify-content-center">
 
                 <!-- BNI -->
@@ -1154,76 +1174,76 @@
                 </div>
 
 
-<div class="row g-3 justify-content-center">
+                <div class="row g-3 justify-content-center">
 
-    <!-- Video 1 -->
-    <div class="col-auto">
-        <div class="glass-card p-2">
-            <div class="video-box">
-               <blockquote class="instagram-media"
-                    data-instgrm-permalink="https://www.instagram.com/reel/DTSRMo-jIxu/"
-                    data-instgrm-version="14"
-                    style="background:#FFF; border:0; padding:0; margin:0; width:100%; height:100%;">
-                </blockquote>
+                    <!-- Video 1 -->
+                    <div class="col-auto">
+                        <div class="glass-card p-2">
+                            <div class="video-box">
+                                <blockquote class="instagram-media"
+                                    data-instgrm-permalink="https://www.instagram.com/reel/DTSRMo-jIxu/"
+                                    data-instgrm-version="14"
+                                    style="background:#FFF; border:0; padding:0; margin:0; width:100%; height:100%;">
+                                </blockquote>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video 2 -->
+                    <div class="col-auto">
+                        <div class="glass-card p-2">
+                            <div class="video-box">
+                                <blockquote class="instagram-media"
+                                    data-instgrm-permalink="https://www.instagram.com/reel/DTaPGf9iTrE/"
+                                    data-instgrm-version="14"
+                                    style="background:#FFF; border:0; padding:0; margin:0; width:100%; height:100%;">
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Instagram Script -->
+                <script async src="https://www.instagram.com/embed.js"></script>
+
+
+
+
+
+
+
+
 
             </div>
+
+
+
+
         </div>
-    </div>
 
-    <!-- Video 2 -->
-    <div class="col-auto">
-        <div class="glass-card p-2">
-            <div class="video-box">
-                <blockquote class="instagram-media"
-                    data-instgrm-permalink="https://www.instagram.com/reel/DTaPGf9iTrE/"
-                    data-instgrm-version="14"
-                    style="background:#FFF; border:0; padding:0; margin:0; width:100%; height:100%;">
-                </blockquote>
-            </div>
+        <!-- Instagram Embed Script -->
+        <script async src="//www.instagram.com/embed.js"></script>
+
         </div>
-    </div>
 
-</div>
-
-<!-- Instagram Script -->
-<script async src="https://www.instagram.com/embed.js"></script>
+        <!-- Instagram Script (Add only once in your full page) -->
+        <script async src="https://www.instagram.com/embed.js"></script>
+        </div>
 
 
 
 
+        </div>
+
+        </div>
 
 
+        </div>
 
-
-   
-</div>
-
-   
-
-    
-</div>
-
-<!-- Instagram Embed Script -->
-<script async src="//www.instagram.com/embed.js"></script>
-
-</div>
-
-<!-- Instagram Script (Add only once in your full page) -->
-<script async src="https://www.instagram.com/embed.js"></script>
-</div>
-
-
-                
-  
-</div>
-
-</div>
-
-
-            </div>
-
-            <!-- Image Gallery Placeholder (Uncomment when ready to add images) -->
-            <!--
+        <!-- Image Gallery Placeholder (Uncomment when ready to add images) -->
+        <!--
             <h3 class="text-white text-center mt-5 mb-4" style="font-family: var(--font-sub);">Event <span class="text-primary">Gallery</span></h3>
             <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6">
