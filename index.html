@@ -17,6 +17,57 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Gallery Images - Consistent Height and Width */
+        .glass-card img {
+            width: 100% !important;
+            height: 250px !important;
+            object-fit: cover !important;
+            border-radius: 8px !important;
+        }
+        
+        .glass-card video {
+            width: 100% !important;
+            height: 250px !important;
+            object-fit: cover !important;
+            border-radius: 8px !important;
+        }
+        
+        /* Ensure all gallery items have same dimensions */
+        #gallery .glass-card {
+            min-height: 300px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+        
+        #gallery .img-fluid {
+            width: 100% !important;
+            height: 250px !important;
+            object-fit: cover !important;
+        }
+        
+        /* Multiple Hall of Fame - Same Height and Width */
+        #awards .glass-card {
+            min-height: 300px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+        
+        #awards .img-fluid {
+            width: 100% !important;
+            height: 250px !important;
+            object-fit: cover !important;
+        }
+        
+        #awards .award-card {
+            min-height: 300px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -722,6 +773,49 @@
             <h2 class="section-title text-center w-100">Leadership <span class="text-primary">Legacy</span></h2>
 
             <div class="timeline-container">
+                <div class="timeline-row right" data-aos="fade-right">
+    <div class="t-content">
+        <div class="t-year">2026</div>
+        <div class="t-role">Leadership & Achievements</div>
+        <div class="t-org">BNI, JCI & Rotary – Pondicherry</div>
+
+        <p class="text-muted">
+            Actively contributing to multiple organizations through leadership, growth, and excellence.
+        </p>
+
+        <ul class="list-unstyled text-start text-muted small mt-3">
+
+            <li><i class="fas fa-caret-right text-primary me-2"></i>
+                Serving as President (2026) of BNI Efficax – Pondicherry (April 29 to September 26)
+            </li>
+
+            <li><i class="fas fa-caret-right text-primary me-2"></i>
+                Immediate Past President (IPP) – JCI Pondicherry (2026)
+            </li>
+
+            <li><i class="fas fa-caret-right text-primary me-2"></i>
+                Serving as Secretary (2026) for Rotary Club of Pondicherry Galaxy
+            </li>
+
+            <li><i class="fas fa-caret-right text-primary me-2"></i>
+                Successfully completed Secretary Graduation at Ooty (March 2026)
+            </li>
+
+            <li><i class="fas fa-caret-right text-primary me-2"></i>
+                Launched BNI Lexicon Chapter with 35+ members, achieving Hall of Fame status in BNI Pondicherry (Regional Launch Director)
+            </li>
+
+            <li><i class="fas fa-caret-right text-primary me-2"></i>
+                Achieved 6-Star Gold Club Member status in BNI Pondicherry by sponsoring 36+ members
+            </li>
+
+            <li><i class="fas fa-caret-right text-primary me-2"></i>
+                Earned Centurion Pin 100 for maintaining Green Status consistently over three months
+            </li>
+
+        </ul>
+    </div>
+</div>
 
                 <!-- 2025: JCI President -->
                 <div class="timeline-row left" data-aos="fade-right">
@@ -957,43 +1051,140 @@
         </div>
     </section>
     <section id="gallery" class="py-5">
-    <div class="container">
-        <h2 class="section-title text-center w-100 mb-5">
-            Multiple Hall<span class="text-primary">of</span> Fame
-        </h2>
+ <div class="container">
+    <h2 class="section-title text-center w-100 mb-5">
+        Multiple Hall<span class="text-primary">of</span> Fame
+    </h2>
 
-        <div class="row g-4 justify-content-center">
+    <div class="row g-4 justify-content-center">
 
-            <!-- Image 1 -->
-            <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in">
-                <div class="glass-card text-center p-3 h-100 d-flex justify-content-center align-items-center">
-                    <img src="images/image1.jpeg" alt="Membership 1" class="img-fluid rounded">
-                </div>
+        <!-- Existing Images 1–4 -->
+        <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in">
+            <div class="glass-card text-center p-3 h-100 d-flex justify-content-center align-items-center">
+                <img src="images/image1.jpeg" class="img-fluid rounded">
             </div>
-
-            <!-- Image 2 -->
-            <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
-                <div class="glass-card text-center p-3 h-100 d-flex justify-content-center align-items-center">
-                    <img src="images/image2.jpeg" alt="Membership 2" class="img-fluid rounded">
-                </div>
-            </div>
-
-            <!-- Image 3 -->
-            <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
-                <div class="glass-card text-center p-3 h-100 d-flex justify-content-center align-items-center">
-                    <img src="images/image3.jpeg" alt="Membership 3" class="img-fluid rounded">
-                </div>
-            </div>
-
-            <!-- Image 4 -->
-            <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300">
-                <div class="glass-card text-center p-3 h-100 d-flex justify-content-center align-items-center">
-                    <img src="images/image4.jpeg" alt="Membership 4" class="img-fluid rounded">
-                </div>
-            </div>
-
         </div>
+
+        <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="glass-card text-center p-3 h-100 d-flex justify-content-center align-items-center">
+                <img src="images/image2.jpeg" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="glass-card text-center p-3 h-100 d-flex justify-content-center align-items-center">
+                <img src="images/image3.jpeg" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="glass-card text-center p-3 h-100 d-flex justify-content-center align-items-center">
+                <img src="images/image4.jpeg" class="img-fluid rounded">
+            </div>
+        </div>
+
+
+        <!-- g1 -->
+        <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in">
+            <div class="glass-card p-3 d-flex justify-content-center align-items-center">
+                <img src="images/g1.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <!-- g2 -->
+        <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="50">
+            <div class="glass-card p-3 d-flex justify-content-center align-items-center">
+                <img src="images/g2.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <!-- g3 -->
+        <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="glass-card p-3 d-flex justify-content-center align-items-center">
+                <img src="images/g3.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <!-- g4 -->
+        <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="150">
+            <div class="glass-card p-3 d-flex justify-content-center align-items-center">
+                <img src="images/g4.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <!-- g5 -->
+        <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="glass-card p-3 d-flex justify-content-center align-items-center">
+                <img src="images/g5.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <!-- g6 -->
+        <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="250">
+            <div class="glass-card p-3 d-flex justify-content-center align-items-center">
+                <img src="images/g6.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <!-- g7 -->
+        <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="glass-card p-3 d-flex justify-content-center align-items-center">
+                <img src="images/g7.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <!-- g8 -->
+        <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="350">
+            <div class="glass-card p-3 d-flex justify-content-center align-items-center">
+                <img src="images/g8.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <!-- g9 -->
+        <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="glass-card p-3 d-flex justify-content-center align-items-center">
+                <img src="images/g9.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <!-- g10 -->
+        <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="450">
+            <div class="glass-card p-3 d-flex justify-content-center align-items-center">
+                <img src="images/g10.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <!-- g11 -->
+        <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="500">
+            <div class="glass-card p-3 d-flex justify-content-center align-items-center">
+                <img src="images/g11.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <!-- g12 -->
+        <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="550">
+            <div class="glass-card p-3 d-flex justify-content-center align-items-center">
+                <img src="images/g12.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+
+ <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="550">
+            <div class="glass-card p-3 d-flex justify-content-center align-items-center">
+                <img src="images/g13.jpeg" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <!-- Video after g12 -->
+        <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="600">
+            <div class="glass-card p-3 d-flex justify-content-center align-items-center">
+                <video class="img-fluid rounded" controls>
+                    <source src="images/video1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
     </div>
+</div>
 </section>
 
 
@@ -1049,7 +1240,7 @@
                         <i class="fas fa-laptop fs-2 mb-2 text-primary"></i>
                         <h6 class="text-white mb-0 small">ITTA</h6>
                         <small class="text-muted" style="font-size: 0.7rem;">IT Traders Assoc.</small>
-                    </div>
+                    </div>n
                 </div>
 
                 <!-- FSAI -->
@@ -1154,39 +1345,111 @@
                 </div>
 
 
-<div class="row g-3 justify-content-center">
+<!-- Instagram Script -->
+<div class="scroll-container d-flex gap-3">
 
     <!-- Video 1 -->
-    <div class="col-auto">
+    <div class="video-item">
         <div class="glass-card p-2">
             <div class="video-box">
-               <blockquote class="instagram-media"
+                <blockquote class="instagram-media"
                     data-instgrm-permalink="https://www.instagram.com/reel/DTSRMo-jIxu/"
-                    data-instgrm-version="14"
-                    style="background:#FFF; border:0; padding:0; margin:0; width:100%; height:100%;">
+                    data-instgrm-version="14">
                 </blockquote>
-
             </div>
         </div>
     </div>
 
     <!-- Video 2 -->
-    <div class="col-auto">
+    <div class="video-item">
         <div class="glass-card p-2">
             <div class="video-box">
                 <blockquote class="instagram-media"
                     data-instgrm-permalink="https://www.instagram.com/reel/DTaPGf9iTrE/"
-                    data-instgrm-version="14"
-                    style="background:#FFF; border:0; padding:0; margin:0; width:100%; height:100%;">
+                    data-instgrm-version="14">
                 </blockquote>
             </div>
         </div>
     </div>
 
+    <!-- Video 3 -->
+    <div class="video-item"><div class="glass-card p-2"><div class="video-box">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTSRMo-jIxu/" data-instgrm-version="14"></blockquote>
+    </div></div></div>
+
+    <!-- Video 4 -->
+    <div class="video-item"><div class="glass-card p-2"><div class="video-box">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTaPGf9iTrE/" data-instgrm-version="14"></blockquote>
+    </div></div></div>
+
+    <!-- Video 5 -->
+    <div class="video-item"><div class="glass-card p-2"><div class="video-box">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTSRMo-jIxu/" data-instgrm-version="14"></blockquote>
+    </div></div></div>
+
+    <!-- Video 6 -->
+    <div class="video-item"><div class="glass-card p-2"><div class="video-box">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTaPGf9iTrE/" data-instgrm-version="14"></blockquote>
+    </div></div></div>
+
+    <!-- Video 7 -->
+    <div class="video-item"><div class="glass-card p-2"><div class="video-box">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTSRMo-jIxu/" data-instgrm-version="14"></blockquote>
+    </div></div></div>
+
+    <!-- Video 8 -->
+    <div class="video-item"><div class="glass-card p-2"><div class="video-box">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTaPGf9iTrE/" data-instgrm-version="14"></blockquote>
+    </div></div></div>
+
+    <!-- Video 9 -->
+    <div class="video-item"><div class="glass-card p-2"><div class="video-box">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTSRMo-jIxu/" data-instgrm-version="14"></blockquote>
+    </div></div></div>
+
+    <!-- Video 10 -->
+    <div class="video-item"><div class="glass-card p-2"><div class="video-box">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTaPGf9iTrE/" data-instgrm-version="14"></blockquote>
+    </div></div></div>
+
+    <!-- Video 11 -->
+    <div class="video-item"><div class="glass-card p-2"><div class="video-box">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTSRMo-jIxu/" data-instgrm-version="14"></blockquote>
+    </div></div></div>
+
+    <!-- Video 12 -->
+    <div class="video-item"><div class="glass-card p-2"><div class="video-box">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTaPGf9iTrE/" data-instgrm-version="14"></blockquote>
+    </div></div></div>
+
+    <!-- Video 13 -->
+    <div class="video-item"><div class="glass-card p-2"><div class="video-box">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTSRMo-jIxu/" data-instgrm-version="14"></blockquote>
+    </div></div></div>
+
+    <!-- Video 14 -->
+    <div class="video-item"><div class="glass-card p-2"><div class="video-box">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTaPGf9iTrE/" data-instgrm-version="14"></blockquote>
+    </div></div></div>
+
+    <!-- Video 15 -->
+    <div class="video-item"><div class="glass-card p-2"><div class="video-box">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTSRMo-jIxu/" data-instgrm-version="14"></blockquote>
+    </div></div></div>
+
+    <!-- Video 16 -->
+    <div class="video-item"><div class="glass-card p-2"><div class="video-box">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTaPGf9iTrE/" data-instgrm-version="14"></blockquote>
+    </div></div></div>
+
+    <!-- Video 17 -->
+    <div class="video-item"><div class="glass-card p-2"><div class="video-box">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTSRMo-jIxu/" data-instgrm-version="14"></blockquote>
+    </div></div></div>
+
 </div>
 
-<!-- Instagram Script -->
-<script async src="https://www.instagram.com/embed.js"></script>
+<script async src="//www.instagram.com/embed.js"></script>
 
 
 
